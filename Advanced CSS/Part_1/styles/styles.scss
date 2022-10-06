@@ -1,0 +1,39 @@
+@import "./mixins";
+@import"./img";
+
+body{
+    background-color:$pageBackground;
+    & main {
+    @include flexCenter();    
+    }
+    .testimonial {
+    @include padding();
+        text-align: center;
+        margin: 30px; 
+        height: 30vh;
+        font-size: 25px;
+        background-color: $textBackground;
+        border-style:  outset 3px grey;
+        border-radius: 30px 30px 0px 0px;
+    }
+}
+
+
+
+    footer {
+        @include flexCenter();
+        @include padding();
+        background-color:#686de0 ;
+        margin: 0px 30px 30px 30px  ;
+        height: 20vh;
+        border-radius: 0px 0px 30px 30px;
+        box-shadow: 20px 20px 50px grey;
+        h1{
+            color:$textBackground;
+            margin-bottom: 0%;
+        }
+        h3 {
+            color: #c3cfe2;
+            margin-top: 0%;
+        }
+    }

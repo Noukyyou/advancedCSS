@@ -1,0 +1,14 @@
+@mixin flexCenter {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+} 
+
+@mixin padding {
+    padding: 50px;
+    margin:0px 50px;
+}
+
+$pageBackground : #c3cfe2;
+$textBackground: #fff;

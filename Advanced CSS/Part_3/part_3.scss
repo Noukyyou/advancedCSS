@@ -1,0 +1,56 @@
+@import "mixins3";
+
+body {
+   background-color: #c3cfe2; 
+}
+
+.socials {
+    @include positionScreen;  
+
+    .blog {
+        background-color: #e17b77;
+        @include positionScreen; 
+        @include alignCenter;
+        @include textDeco;
+        & :hover {
+            @include hover;
+        }
+    }
+    
+    .facebook {
+        background-color: #3b5998;
+        @include positionScreen;
+        @include alignCenter;
+        @include textDeco;
+        & :hover {
+            @include hover;
+        }
+    }
+    .twitter {
+        background-color: #00aced;
+        @include positionScreen;
+        @include alignCenter;
+        @include textDeco;
+        & :hover {
+            @include hover;
+        }
+    }
+    .github {
+        background-color: #333;
+        @include positionScreen;
+        @include alignCenter;
+        @include textDeco;
+        & :hover {
+            @include hover;
+        }
+    }
+    .linkedin {
+        background-color: #007bb6;
+        @include positionScreen;
+        @include alignCenter;
+        @include textDeco;
+        & :hover {
+            @include hover;
+        }
+    }
+} 

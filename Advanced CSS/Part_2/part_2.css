@@ -1,0 +1,19 @@
+* {
+  background-color: #c3cfe2;
+}
+
+.headshots {
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.headshots img {
+  width: 350px;
+  height: auto;
+  margin: 0%;
+  padding: 10px;
+  border-radius: 30px;
+  position: relative;
+}/*# sourceMappingURL=part_2.css.map */

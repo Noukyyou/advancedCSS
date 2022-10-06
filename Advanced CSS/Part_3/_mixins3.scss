@@ -1,0 +1,33 @@
+@mixin alignCenter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center; 
+    align-content: left;
+    width:200px;
+    transition: left .5s ease-in;
+}
+
+@mixin textDeco {
+    & :link {
+        text-decoration: none;
+        color: white;
+    & :visited {
+        text-decoration: none;
+        color:white;
+        }    
+    }
+}
+
+ @mixin positionScreen {
+    position:absolute;
+    top:50%;
+    right:0;
+    left:93%;
+    transition-property: left;
+    transition-duration: 1s;
+ }  
+        
+    
+@mixin hover {
+    left: 80%;
+}
