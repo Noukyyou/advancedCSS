@@ -5,9 +5,10 @@
 }
 
 .headshots {
-    display:block;
+    display:flex;
     flex-direction: column;
     flex-wrap:wrap;
+    flex-basis:1;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -16,23 +17,26 @@
         @include pictures;
         margin: 0%;
         padding:10px;
-        border-radius: 30px;
-       
-    }
-    
-    }
+        border-radius: 30px;    
+    }  
 
-.hover {
-    background: gray; 
+    .overlay {
     position:absolute;
+    transition: all .3s ease;
+    opacity:0;
     top:0;
     left:0;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    
+    background-color: rgb(51, 49, 49);
+    }
+
+    a {
+        background-color: lightgrey;
+        color:black ;
+        
+    }
 }
     
-.hover:hover {
+.headshots:hover {
     background-color: black;
   }
 
@@ -46,12 +50,16 @@
 @media screen and (min-width: 768px) {
     img {
         flex: 50%;
+        flex-basis:2;
     }
 }
 @media screen and (min-width: 1024px) {
-    img {
-        
-        flex: 100%;
-        justify-content: space-between;
-    }
+    .headshots {
+        margin-left: 50px;
+
+        img {
+            flex: 100%;
+            flex-basis:3;
+            }
+        }
 }
