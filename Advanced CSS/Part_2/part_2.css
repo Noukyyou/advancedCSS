@@ -4,11 +4,9 @@
 
 .headshots {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  flex-basis: 1;
-  align-items: center;
   justify-content: center;
+  position: relative;
 }
 .headshots img {
   width: 450px;
@@ -20,13 +18,17 @@
   opacity: 100%;
   transition: opacity 500ms ease-in-out;
 }
-.headshots img .overlay {
+.headshots .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(51, 49, 49);
+  border-radius: 20px;
   position: absolute;
   top: 0;
-  left: 0;
+  left: auto;
   transition: opacity 500ms ease-in-out;
-  width: 100%;
+  width: 450px;
   height: 100%;
   opacity: 0%;
 }
@@ -37,37 +39,16 @@ a {
   box-sizing: border-box;
   border-radius: 5px;
   color: #000;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 7px 15px;
   position: absolute;
-  top: 50px;
+  top: 200px;
 }
 
-img:hover {
+.img:hover {
   opacity: 0%;
 }
 
 .overlay:hover {
   opacity: 100%;
-}
-
-@media screen and (min-width: 320px) {
-  img {
-    flex: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  img {
-    flex: 50%;
-    flex-basis: 2;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .headshots {
-    margin-left: 50px;
-  }
-  .headshots img {
-    flex: 100%;
-    flex-basis: 3;
-  }
 }/*# sourceMappingURL=part_2.css.map */
